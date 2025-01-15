@@ -37,7 +37,7 @@ const Hero = ({loadingHandle}) => {
         <Image
           alt={"Login Image"}
           objectFit={"cover"}
-          src={"/src/assets/home-pic.png"}
+          src={"https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/home-pic.png"}
           onLoad={loadingHandle}
         />
       </Flex>
