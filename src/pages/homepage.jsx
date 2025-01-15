@@ -11,7 +11,7 @@ import { SocketContext } from "../provider/socketContext";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 const HomePage = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const socket = useContext(SocketContext);
   const boxChatList = useSelector((state) => state.chat.boxChat);
   const useDetail = useSelector((state) => state.auth.useDetail)
