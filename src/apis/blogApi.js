@@ -2,7 +2,7 @@ import axios from "axios";
 import AttachApi from "./attachApi";
 
 const BlogApi = {
-  baseUrl:  "http://ctu-social-api.onrender.com"+"/api/",
+  baseUrl:  "https://ctu-social-api-ajg5.onrender.com"+"/api/",
 
   formatUrl: (url) => BlogApi.baseUrl + url,
 

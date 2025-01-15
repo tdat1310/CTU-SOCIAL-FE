@@ -1,7 +1,7 @@
 import axios from "axios";
 const AttachApi = {
   formatUrl: (url) => {
-    return "http://ctu-social-api.onrender.com"+"/api/" + url;
+    return "https://ctu-social-api-ajg5.onrender.com"+"/api/" + url;
   },
   createAttach: async (url, data, type, userName, userId, groupType) => {
     const newUrl = AttachApi.formatUrl(url);
