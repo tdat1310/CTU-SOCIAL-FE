@@ -46,7 +46,7 @@ const InfoDisplay = ({
           src={
             groupDetails.coverPic
               ? groupDetails.coverPic.display_url
-              : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-cover.png?raw=true"
+              : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-cover.png?raw=true"
           }
           alt="Bìa Nhóm"
           borderRadius="md"
@@ -244,7 +244,7 @@ const InfoDisplay = ({
               src={
                 user.avtPic
                   ? user.avtPic.display_url
-                  : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
+                  : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
               }
               border={"3.5px solid #2d5be4"}
               onClick={onMemberOpen}

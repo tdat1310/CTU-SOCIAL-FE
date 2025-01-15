@@ -166,7 +166,7 @@ const InfoChatModal = ({ memberSection, userDetail }) => {
             >
               <Image
                 src={
-                  "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-data.png?raw=true.png"
+                  "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-data.png?raw=true.png"
                 }
                 alt="Ảnh trống"
                 objectFit="contain"
@@ -227,7 +227,7 @@ const InfoChatModal = ({ memberSection, userDetail }) => {
             >
               <Image
                 src={
-                  "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-data.png?raw=true.png"
+                  "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-data.png?raw=true.png"
                 }
                 alt="Không có file nào"
                 objectFit="contain"

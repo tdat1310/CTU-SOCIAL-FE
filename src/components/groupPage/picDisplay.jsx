@@ -44,7 +44,7 @@ const PicDisplay = ({ photos, dispatch, navigate, userDetail, isMember }) => {
           <Flex w={"100%"} justifyContent={"center"}>
             <Image
               w={"30%"}
-              src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-pic.png?raw=true.png"
+              src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-pic.png?raw=true.png"
               h={"350px"}
             />
           </Flex>

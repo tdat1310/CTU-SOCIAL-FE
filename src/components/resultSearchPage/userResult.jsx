@@ -48,7 +48,7 @@ const UserResult = ({ user, userId, navigate }) => (
         src={
           user.avtPic
             ? user.avtPic.display_url
-            : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
+            : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
         }
         size="lg"
         border="3px solid" // Viền cho Avatar

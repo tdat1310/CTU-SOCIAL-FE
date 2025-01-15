@@ -150,7 +150,7 @@ const RightContent = ({ data }) => {
                       src={
                         follower.avtPic
                           ? follower.avtPic.display_url
-                          : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
+                          : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
                       }
                     />
                     <Text key={index}>{follower.userName}</Text>
@@ -186,7 +186,7 @@ const RightContent = ({ data }) => {
                       src={
                         following.avtPic
                           ? following.avtPic.display_url
-                          : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
+                          : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
                       }
                     />
                     <Text key={index}>{following.userName}</Text>

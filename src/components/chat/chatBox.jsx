@@ -197,7 +197,7 @@ const ChatBox = ({
           src={
             boxChat.otherUser.avtPic
               ? boxChat.otherUser.avtPic.display_url
-              : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
+              : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
           }
         >
           {onlineState && <AvatarBadge boxSize="1.25em" bg="#6EC207" />}

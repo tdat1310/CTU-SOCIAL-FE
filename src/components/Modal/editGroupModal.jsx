@@ -22,7 +22,7 @@ const EditGroupModal = ({ isOpen, onClose, onUpdate, groupDetails }) => {
   const description = groupDetails.MoTa;
   const imagePreview = groupDetails.coverPic
     ? groupDetails.coverPic.display_url
-    : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-cover.png?raw=true";
+    : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-cover.png?raw=true";
 
   // State chỉ cho các giá trị có thể thay đổi trong quá trình chỉnh sửa
   const [coverImage, setCoverImage] = React.useState(null);

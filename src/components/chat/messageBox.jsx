@@ -306,7 +306,7 @@ const MessageBox = ({
                   src={
                     chat?.otherUser?.avtPic
                       ? chat.otherUser.avtPic?.display_url
-                      : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
+                      : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
                   }
                 />
                 <Text fontWeight="bold">
@@ -372,7 +372,7 @@ const MessageBox = ({
             </Text>
             <Image
               h={"400px"}
-              src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-msg.png?raw=true.png"
+              src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-msg.png?raw=true.png"
             />
           </Flex>
         )}

@@ -42,7 +42,7 @@ const AvatarItem = ({ item, type, leftSection }) => {
               src={
                 item.avtPic
                   ? item.avtPic.display_url
-                  : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
+                  : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
               }
               boxSize={item.type === "group" ? "40px" : undefined}
               borderRadius={item.type === "group" ? "10px" : undefined}
