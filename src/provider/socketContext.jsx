@@ -11,7 +11,7 @@ export const SocketProvider = ({ children }) => {
   const userDetail = useSelector((state) => state.auth.userDetail)
   const dispatch = useDispatch()
   const newSocket = useCallback(() => {
-    const socket = io('http://localhost:8080');
+    const socket = io('https://ctu-social-api-ajg5.onrender.com');
     socket.on('connect', () => {
       console.log('Socket connected');
       const additionalData = { userId: userDetail ? userDetail._id  : "Chưa đăng nhập"};
