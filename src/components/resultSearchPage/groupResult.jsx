@@ -32,15 +32,25 @@ const GroupResult = ({ group, navigate }) => {
       <HStack spacing={4} align="center">
         <Avatar
           name={group.TenNhom}
-          src={group.coverPic ? group.coverPic.display_url : "/src/assets/no-cover.png"}
-          borderRadius={'10px'}
+          src={
+            group.coverPic
+              ? group.coverPic.display_url
+              : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-cover.png?raw=true"
+          }
+          borderRadius={"10px"}
           size="xl"
           borderWidth="2px"
           borderColor={useColorModeValue("gray.300", "gray.600")}
         />
         <VStack align="start" spacing={1}>
           <Tooltip label={group.TenNhom} aria-label="Tên nhóm" placement="top">
-            <Text fontWeight="bold" fontSize="lg" color="blue.500" isTruncated maxW="180px">
+            <Text
+              fontWeight="bold"
+              fontSize="lg"
+              color="blue.500"
+              isTruncated
+              maxW="180px"
+            >
               {group.TenNhom}
             </Text>
           </Tooltip>

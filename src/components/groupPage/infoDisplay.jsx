@@ -46,11 +46,11 @@ const InfoDisplay = ({
           src={
             groupDetails.coverPic
               ? groupDetails.coverPic.display_url
-              : "/src/assets/no-cover.png"
+              : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-cover.png?raw=true"
           }
           alt="Bìa Nhóm"
           borderRadius="md"
-          w={'100%'}
+          w={"100%"}
           height="250px"
           objectFit="cover"
         />
@@ -241,7 +241,11 @@ const InfoDisplay = ({
             <Avatar
               size="md"
               key={user._id}
-              src={user.avtPic ? user.avtPic.display_url : '/src/assets/no-avt.png'}
+              src={
+                user.avtPic
+                  ? user.avtPic.display_url
+                  : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
+              }
               border={"3.5px solid #2d5be4"}
               onClick={onMemberOpen}
             />

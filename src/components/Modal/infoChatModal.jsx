@@ -9,7 +9,7 @@ import {
   ModalOverlay,
   ModalContent,
   Avatar,
-  Link
+  Link,
 } from "@chakra-ui/react";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import React, { useEffect, useState } from "react";
@@ -72,15 +72,14 @@ const InfoChatModal = ({ memberSection, userDetail }) => {
             <Flex>
               <Box
                 as="button"
-                color={'whitesmoke'}
-                fontWeight={'600'}
+                color={"whitesmoke"}
+                fontWeight={"600"}
                 bg="#2d5be4"
                 _hover={{
-                  transform: 'scale(1.03)'
+                  transform: "scale(1.03)",
                 }}
-                transition={'0.3s'}
+                transition={"0.3s"}
                 onClick={() => handleViewChange("photos")}
-                
                 p={2}
                 borderRadius="md"
                 mr={2}
@@ -99,13 +98,13 @@ const InfoChatModal = ({ memberSection, userDetail }) => {
               <Box
                 as="button"
                 onClick={() => handleViewChange("files")}
-                color={'whitesmoke'}
-                fontWeight={'600'}
+                color={"whitesmoke"}
+                fontWeight={"600"}
                 bg="#2d5be4"
                 _hover={{
-                  transform: 'scale(1.03)'
+                  transform: "scale(1.03)",
                 }}
-                transition={'0.3s'}
+                transition={"0.3s"}
                 p={2}
                 borderRadius="md"
               >
@@ -115,23 +114,22 @@ const InfoChatModal = ({ memberSection, userDetail }) => {
           </Box>
 
           {/* Mục thành viên */}
-          {memberSection!='' && (
+          {memberSection != "" && (
             <Box mb={4}>
               <Text fontWeight="bold" mb={2}>
                 Thành viên
               </Text>
               <Flex>
                 <Box
-                
                   as="button"
                   onClick={() => handleViewChange("members")}
-                  color={'whitesmoke'}
-                  fontWeight={'600'}
+                  color={"whitesmoke"}
+                  fontWeight={"600"}
                   bg="#2d5be4"
                   _hover={{
-                    transform: 'scale(1.03)'
+                    transform: "scale(1.03)",
                   }}
-                  transition={'0.3s'}
+                  transition={"0.3s"}
                   p={2}
                   borderRadius="md"
                 >
@@ -167,7 +165,9 @@ const InfoChatModal = ({ memberSection, userDetail }) => {
               mb={4}
             >
               <Image
-                src={"/src/assets/no-data.png"}
+                src={
+                  "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-data.png?raw=true.png"
+                }
                 alt="Ảnh trống"
                 objectFit="contain"
               />
@@ -226,7 +226,9 @@ const InfoChatModal = ({ memberSection, userDetail }) => {
               mb={4}
             >
               <Image
-                src={"/src/assets/no-data.png"}
+                src={
+                  "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-data.png?raw=true.png"
+                }
                 alt="Không có file nào"
                 objectFit="contain"
               />
@@ -238,19 +240,19 @@ const InfoChatModal = ({ memberSection, userDetail }) => {
             {chatFileMessages.map((message, index) => (
               <Flex
                 key={index}
-                color={'whitesmoke'}
-                fontWeight={'600'}
+                color={"whitesmoke"}
+                fontWeight={"600"}
                 bg="#2d5be4"
                 _hover={{
-                  transform: 'scale(1.01)'
+                  transform: "scale(1.01)",
                 }}
-                transition={'0.3s'}
+                transition={"0.3s"}
                 p={2}
                 borderRadius="md"
                 mb={2}
                 justifyContent={"space-between"}
               >
-                <Flex gap={"10px"} alignItems={'center'}>
+                <Flex gap={"10px"} alignItems={"center"}>
                   <Box fontSize={"20px"}>
                     <GetIconByMimeType mimeType={message.file.mimeType} />
                   </Box>
@@ -258,7 +260,12 @@ const InfoChatModal = ({ memberSection, userDetail }) => {
                     {message.file.name_file}
                   </Text>
                 </Flex>
-                <Link fontSize={"25px"} mt={"2px"} cursor={'pointer'} href={message.file.download_url}>
+                <Link
+                  fontSize={"25px"}
+                  mt={"2px"}
+                  cursor={"pointer"}
+                  href={message.file.download_url}
+                >
                   <MdOutlineFileDownload />
                 </Link>
               </Flex>
@@ -269,48 +276,53 @@ const InfoChatModal = ({ memberSection, userDetail }) => {
 
       {/* Hiển thị danh sách thành viên */}
       {currentView === "members" && (
-  <>
-    <Flex mb={4} alignItems="center" justifyContent="space-between">
-      <IconButton
-        icon={<ArrowBackIcon />}
-        onClick={() => handleViewChange("info")}
-        variant="ghost"
-        aria-label="Quay lại"
-      />
-      <Text fontWeight="bold" mr={"10px"}>
-        Danh sách thành viên
-      </Text>
-    </Flex>
-
-    <Box overflowY="auto" maxH="300px" p={2}>
-      {memberSection[0]?.otherUser.length === 0 ? (
-        <Text>Không có thành viên nào.</Text>
-      ) : (
         <>
-          <Flex alignItems="center" p={2} bg="gray.100" borderRadius="md" mb={2}>
-            <Avatar boxSize="40px" borderRadius="full" mr={2} />
-            <Text ml={'10px'}>{userDetail.userName}</Text>
+          <Flex mb={4} alignItems="center" justifyContent="space-between">
+            <IconButton
+              icon={<ArrowBackIcon />}
+              onClick={() => handleViewChange("info")}
+              variant="ghost"
+              aria-label="Quay lại"
+            />
+            <Text fontWeight="bold" mr={"10px"}>
+              Danh sách thành viên
+            </Text>
           </Flex>
 
-          {memberSection[0]?.otherUser.map((member) => (
-            <Flex
-              key={member._id}
-              alignItems="center"
-              p={2}
-              bg="gray.100"
-              borderRadius="md"
-              mb={2}
-            >
-              <Avatar boxSize="40px" borderRadius="full" mr={2} />
-              <Text ml={'10px'}>{member.userName}</Text>
-            </Flex>
-          ))}
+          <Box overflowY="auto" maxH="300px" p={2}>
+            {memberSection[0]?.otherUser.length === 0 ? (
+              <Text>Không có thành viên nào.</Text>
+            ) : (
+              <>
+                <Flex
+                  alignItems="center"
+                  p={2}
+                  bg="gray.100"
+                  borderRadius="md"
+                  mb={2}
+                >
+                  <Avatar boxSize="40px" borderRadius="full" mr={2} />
+                  <Text ml={"10px"}>{userDetail.userName}</Text>
+                </Flex>
+
+                {memberSection[0]?.otherUser.map((member) => (
+                  <Flex
+                    key={member._id}
+                    alignItems="center"
+                    p={2}
+                    bg="gray.100"
+                    borderRadius="md"
+                    mb={2}
+                  >
+                    <Avatar boxSize="40px" borderRadius="full" mr={2} />
+                    <Text ml={"10px"}>{member.userName}</Text>
+                  </Flex>
+                ))}
+              </>
+            )}
+          </Box>
         </>
       )}
-    </Box>
-  </>
-)}
-
 
       {/* Modal hiển thị ảnh lớn */}
       <Modal isOpen={isModalOpen} onClose={handleCloseModal} isCentered>

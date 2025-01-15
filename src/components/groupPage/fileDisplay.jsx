@@ -50,7 +50,11 @@ const FileDisplay = ({ files, dispatch, navigate, userDetail, isMember }) => {
       {isMember ? (
         files.length === 0 ? (
           <Flex w={"100%"} justifyContent={"center"}>
-            <Image w={"40%"} src="/src/assets/no-file.png" h={"350px"} />
+            <Image
+              w={"40%"}
+              src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-file.png?raw=true.png"
+              h={"350px"}
+            />
           </Flex>
         ) : (
           <SimpleGrid columns={[1, 2, 3]} w={"100%"} spacing={3}>

@@ -27,7 +27,13 @@ import GroupApi from "../../apis/groupApi";
 import { useDispatch } from "react-redux";
 import { fetchGroupDetails } from "../../Redux/slices/groupSlice";
 
-const MemberListModal = ({ isOpen, onClose, members, groupDetails, userDetail }) => {
+const MemberListModal = ({
+  isOpen,
+  onClose,
+  members,
+  groupDetails,
+  userDetail,
+}) => {
   const [searchTerm, setSearchTerm] = useState("");
   const dispatch = useDispatch();
 
@@ -97,7 +103,13 @@ const MemberListModal = ({ isOpen, onClose, members, groupDetails, userDetail })
                   borderBottom="1px solid #eaeaea"
                 >
                   <Flex alignItems="center">
-                    <Avatar src={member.avtPic ? member.avtPic.display_url : '/src/assets/no-avt.png'} />
+                    <Avatar
+                      src={
+                        member.avtPic
+                          ? member.avtPic.display_url
+                          : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
+                      }
+                    />
                     <Text ml={4}>{member.userName}</Text>
 
                     {/* Hiển thị Tooltip chỉ khi không phải là trưởng nhóm */}
@@ -126,50 +138,59 @@ const MemberListModal = ({ isOpen, onClose, members, groupDetails, userDetail })
                         Trưởng nhóm
                       </Button>
                     ) : (
-                      userDetail._id === groupDetails.TruongNhom._id &&
-                      <Menu>
-                        <MenuButton
-                          as={Button}
-                          rightIcon={<StarIcon />}
-                          colorScheme="teal"
-                          size="sm"
-                        >
-                          Phân quyền
-                        </MenuButton>
-                        <MenuList
-                          w={"100px"}
-                          border="1px solid #DFE0DC"
-                          shadow={"md"}
-                        >
-                          {/* Quyền duyệt yêu cầu tham gia */}
-                          <MenuItem
-                            onClick={() => toggleRole(member, "accept")}
-                            color={
-                              groupDetails.RoleGroup.accept.includes(member._id)
-                                ? "red.500"
-                                : "black"
-                            }
+                      userDetail._id === groupDetails.TruongNhom._id && (
+                        <Menu>
+                          <MenuButton
+                            as={Button}
+                            rightIcon={<StarIcon />}
+                            colorScheme="teal"
+                            size="sm"
                           >
-                            {groupDetails.RoleGroup.accept.includes(member._id)
-                              ? "Xóa quyền duyệt yêu cầu"
-                              : "Duyệt yêu cầu tham gia"}
-                          </MenuItem>
+                            Phân quyền
+                          </MenuButton>
+                          <MenuList
+                            w={"100px"}
+                            border="1px solid #DFE0DC"
+                            shadow={"md"}
+                          >
+                            {/* Quyền duyệt yêu cầu tham gia */}
+                            <MenuItem
+                              onClick={() => toggleRole(member, "accept")}
+                              color={
+                                groupDetails.RoleGroup.accept.includes(
+                                  member._id
+                                )
+                                  ? "red.500"
+                                  : "black"
+                              }
+                            >
+                              {groupDetails.RoleGroup.accept.includes(
+                                member._id
+                              )
+                                ? "Xóa quyền duyệt yêu cầu"
+                                : "Duyệt yêu cầu tham gia"}
+                            </MenuItem>
 
-                          {/* Quyền mời người khác vào */}
-                          <MenuItem
-                            onClick={() => toggleRole(member, "invite")}
-                            color={
-                              groupDetails.RoleGroup.invite.includes(member._id)
-                                ? "red.500"
-                                : "black"
-                            }
-                          >
-                            {groupDetails.RoleGroup.invite.includes(member._id)
-                              ? "Xóa quyền mời người dùng"
-                              : "Mời người dùng"}
-                          </MenuItem>
-                        </MenuList>
-                      </Menu>
+                            {/* Quyền mời người khác vào */}
+                            <MenuItem
+                              onClick={() => toggleRole(member, "invite")}
+                              color={
+                                groupDetails.RoleGroup.invite.includes(
+                                  member._id
+                                )
+                                  ? "red.500"
+                                  : "black"
+                              }
+                            >
+                              {groupDetails.RoleGroup.invite.includes(
+                                member._id
+                              )
+                                ? "Xóa quyền mời người dùng"
+                                : "Mời người dùng"}
+                            </MenuItem>
+                          </MenuList>
+                        </Menu>
+                      )
                     )}
                   </Box>
                 </Box>

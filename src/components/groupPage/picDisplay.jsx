@@ -42,7 +42,11 @@ const PicDisplay = ({ photos, dispatch, navigate, userDetail, isMember }) => {
       {isMember ? (
         photos.length === 0 ? (
           <Flex w={"100%"} justifyContent={"center"}>
-            <Image w={"30%"} src="/src/assets/no-pic.png" h={"350px"} />
+            <Image
+              w={"30%"}
+              src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-pic.png?raw=true.png"
+              h={"350px"}
+            />
           </Flex>
         ) : (
           <SimpleGrid columns={[1, 2, 3]} spacing={5} w={"100%"}>
@@ -96,9 +100,8 @@ const PicDisplay = ({ photos, dispatch, navigate, userDetail, isMember }) => {
         )
       ) : (
         <Text fontSize="lg" color="gray.500" p={3}>
-        Bạn không phải là thành viên của nhóm này, nên không thể
-        xem các ảnh.
-      </Text>
+          Bạn không phải là thành viên của nhóm này, nên không thể xem các ảnh.
+        </Text>
       )}
 
       {/* Modal hiển thị ảnh */}

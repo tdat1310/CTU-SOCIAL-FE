@@ -78,7 +78,7 @@ const ChatBox = ({
     if (selectedChat !== idx) {
       dispatch(getUnseenMessageCount(`chat/MissMsg/${userDetail._id}`));
       socket.on("new_message", (data) => {
-        dispatch(loadAllRoom(`chat/get/room/${userDetail._id}`))
+        dispatch(loadAllRoom(`chat/get/room/${userDetail._id}`));
         // console.log(selectedChat)
         dispatch(loadAllMessage(`chat/messages/${selectedChat}`));
         dispatch(getUnseenMessageCount(`chat/MissMsg/${userDetail._id}`));
@@ -86,8 +86,8 @@ const ChatBox = ({
     } else {
       socket.on("new_message", (data) => {
         // dispatch(getUnseenMessageCount(`chat/MissMsg/${userDetail._id}`));
-       
-      //  console.log('hello')
+
+        //  console.log('hello')
         dispatch(
           markAllMessagesAsSeen({
             url: "chat/setSeenMsg",
@@ -175,7 +175,6 @@ const ChatBox = ({
           //   })
           // );
 
-          
           dispatch(
             markAllMessagesAsSeen({
               url: "chat/setSeenMsg",
@@ -187,7 +186,7 @@ const ChatBox = ({
           );
           setTimeout(() => {
             setSelectedChat(idx);
-           // dispatch(loadAllMessage(`chat/messages/${idx}`));
+            // dispatch(loadAllMessage(`chat/messages/${idx}`));
             dispatch(getUnseenMessageCount(`chat/MissMsg/${userDetail._id}`));
           }, 1000);
           //  dispatch(getUnseenMessageCount(`chat/MissMsg/${userDetail._id}`));
@@ -198,7 +197,7 @@ const ChatBox = ({
           src={
             boxChat.otherUser.avtPic
               ? boxChat.otherUser.avtPic.display_url
-              : "/src/assets/no-avt.png"
+              : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
           }
         >
           {onlineState && <AvatarBadge boxSize="1.25em" bg="#6EC207" />}

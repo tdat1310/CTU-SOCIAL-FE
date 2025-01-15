@@ -30,11 +30,13 @@ const Auth = () => {
         bg="gray.80"
         visibility={loading ? "hidden" : "visible"}
       >
-        <Stack w="60%" h="100%" position="relative" bg={'#2d5be4'}>
+        <Stack w="60%" h="100%" position="relative" bg={"#2d5be4"}>
           <Img
-            src={"/src/assets/auth-pic.png"}
+            src={
+              "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainauth-pic.png?raw=true"
+            }
             h="100%"
-            objectFit={'contain'}
+            objectFit={"contain"}
             onLoad={handleImageLoad}
           />
         </Stack>

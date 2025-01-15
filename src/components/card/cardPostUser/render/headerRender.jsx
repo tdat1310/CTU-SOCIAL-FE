@@ -118,7 +118,7 @@ const HeaderRender = ({
                 src={
                   blogData?.fromGroup?.coverPic
                     ? blogData.fromGroup.coverPic.display_url
-                    : "/src/assets/no-avt.png"
+                    : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
                 }
                 borderRadius={"10px"}
               />
@@ -133,7 +133,7 @@ const HeaderRender = ({
               src={
                 userDetail.avtPic
                   ? userDetail.avtPic.display_url
-                  : "/src/assets/no-avt.png"
+                  : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
               }
               border="3px solid #2d5be4"
             />
@@ -220,10 +220,12 @@ const HeaderRender = ({
               </>
             )}
             {ownerPost !== userAcc?._id && (
-              <MenuItem onClick={() => {
-                setReportReason('')
-                onOpen()
-                }}>
+              <MenuItem
+                onClick={() => {
+                  setReportReason("");
+                  onOpen();
+                }}
+              >
                 <BsExclamationTriangle style={{ marginRight: "8px" }} />
                 <Text>Báo cáo bài viết</Text>
               </MenuItem>

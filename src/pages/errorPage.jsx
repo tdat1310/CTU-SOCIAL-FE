@@ -17,10 +17,10 @@ const ErrorPage = () => {
         </Text>
         <Flex justifyContent="center" alignItems="center">
           <Image
-            src={"/src/assets/404.png"}
+            src={"404.png"}
             alt="Không có file nào"
             objectFit="contain"
-            height={'400px'}
+            height={"400px"}
           />
         </Flex>
         <Text mt={2} fontSize="lg" fontWeight="semibold" color="gray.600">

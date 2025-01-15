@@ -20,9 +20,14 @@ const AvatarItem = ({ item, type, leftSection }) => {
       <Flex align="center">
         {type === "tag" ? (
           <Box>
-            <Flex alignItems={'center'} color={'#2d5be4'} fontWeight={600} fontSize={'18px'}>
-              <FaHashtag/>
-            <Text > {item.TenTag}</Text>
+            <Flex
+              alignItems={"center"}
+              color={"#2d5be4"}
+              fontWeight={600}
+              fontSize={"18px"}
+            >
+              <FaHashtag />
+              <Text> {item.TenTag}</Text>
             </Flex>
             <Text fontSize={"12px"} color={"gray.500"}>
               {item.baiDang_id?.length} bài viết
@@ -32,9 +37,13 @@ const AvatarItem = ({ item, type, leftSection }) => {
           <>
             <Avatar
               size={item.type === "user" ? "sm" : "md"}
-              border={'3px solid #2d5be4'}
+              border={"3px solid #2d5be4"}
               name={item.userName}
-              src={item.avtPic ? item.avtPic.display_url : "/src/assets/no-avt.png"}
+              src={
+                item.avtPic
+                  ? item.avtPic.display_url
+                  : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
+              }
               boxSize={item.type === "group" ? "40px" : undefined}
               borderRadius={item.type === "group" ? "10px" : undefined}
               objectFit="cover"

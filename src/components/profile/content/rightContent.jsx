@@ -27,7 +27,7 @@ import { IoMdSchool } from "react-icons/io";
 
 const RightContent = ({ data }) => {
   const userData = data.user || data; // Sử dụng `data.user` nếu có, nếu không thì dùng `data`
-  console.log(userData)
+  console.log(userData);
   const {
     isOpen: isFollowerOpen,
     onOpen: onFollowerOpen,
@@ -150,7 +150,7 @@ const RightContent = ({ data }) => {
                       src={
                         follower.avtPic
                           ? follower.avtPic.display_url
-                          : "/src/assets/no-avt.png"
+                          : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
                       }
                     />
                     <Text key={index}>{follower.userName}</Text>
@@ -186,7 +186,7 @@ const RightContent = ({ data }) => {
                       src={
                         following.avtPic
                           ? following.avtPic.display_url
-                          : "/src/assets/no-avt.png"
+                          : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
                       }
                     />
                     <Text key={index}>{following.userName}</Text>

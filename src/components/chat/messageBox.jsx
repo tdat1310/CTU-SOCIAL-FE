@@ -64,7 +64,7 @@ const MessageBox = ({
       document.getElementById("send").focus();
       dispatch(loadAllMessage(`chat/messages/${selectedChat}`));
       const handleNewMessage = (data) => {
-        console.log('hello')
+        console.log("hello");
         dispatch(loadAllRoom(`chat/get/room/${userDetail._id}`));
         dispatch(loadAllMessage(`chat/messages/${selectedChat}`));
         dispatch(
@@ -77,7 +77,6 @@ const MessageBox = ({
           })
         );
         // dispatch(getUnseenMessageCount(`chat/MissMsg/${userDetail._id}`));
-
       };
       socket.on("new_message", handleNewMessage);
       return () => {
@@ -307,7 +306,7 @@ const MessageBox = ({
                   src={
                     chat?.otherUser?.avtPic
                       ? chat.otherUser.avtPic?.display_url
-                      : "/src/assets/no-avt.png"
+                      : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
                   }
                 />
                 <Text fontWeight="bold">
@@ -371,7 +370,10 @@ const MessageBox = ({
             <Text fontWeight={"600"} fontSize={"20px"}>
               Chọn đoạn chat để bắt đầu trò chuyện
             </Text>
-            <Image h={"400px"} src="/src/assets/no-msg.png" />
+            <Image
+              h={"400px"}
+              src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-msg.png?raw=true.png"
+            />
           </Flex>
         )}
       </Flex>

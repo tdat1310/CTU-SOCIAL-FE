@@ -116,7 +116,7 @@ const SavePage = () => {
                     <Image
                       objectFit={"contain"}
                       h={"400px"}
-                      src="/src/assets/no-save.png"
+                      src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-save.png?raw=true.png"
                     />
                   </Flex>
                 )
@@ -174,7 +174,7 @@ const SavePage = () => {
                   <Image
                     objectFit={"contain"}
                     h={"400px"}
-                    src="/src/assets/no-save.png"
+                    src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-save.png?raw=true.png"
                   />
                 </Flex>
               )}

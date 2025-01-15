@@ -33,7 +33,7 @@ const MsgBoxHeader = ({
   userDetail,
   socket,
   onOpen,
-  setAddState
+  setAddState,
 }) => {
   const navigate = useNavigate();
   const [isEditing, setIsEditing] = useState(false);
@@ -95,7 +95,14 @@ const MsgBoxHeader = ({
       p={4}
     >
       <HStack spacing={3} w="50%">
-        <Avatar name="Username" src={chat?.otherUser?.avtPic ? chat.otherUser.avtPic.display_url : '/src/assets/no-avt.png'} />
+        <Avatar
+          name="Username"
+          src={
+            chat?.otherUser?.avtPic
+              ? chat.otherUser.avtPic.display_url
+              : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
+          }
+        />
         {isEditing ? (
           <Input
             value={groupName}
@@ -118,12 +125,17 @@ const MsgBoxHeader = ({
         )}
       </HStack>
 
-      <InputGroup w="50%"  border="1px solid #DFE0DC" borderRadius={'10px'}  bg={"#e7ebf6"} >
+      <InputGroup
+        w="50%"
+        border="1px solid #DFE0DC"
+        borderRadius={"10px"}
+        bg={"#e7ebf6"}
+      >
         <Input
           placeholder="Tìm kiếm tin nhắn.."
           value={searchQuery}
           _placeholder={{
-            fontWeight: 500
+            fontWeight: 500,
           }}
           onChange={handleSearchChange}
           onKeyDown={handleKeyDown}
@@ -160,10 +172,10 @@ const MsgBoxHeader = ({
             icon={<HiUserAdd />}
             fontSize={"22px"}
             aria-label="Info"
-             onClick={()=>{
-              setAddState('addMember')
-              onOpen()
-             }}
+            onClick={() => {
+              setAddState("addMember");
+              onOpen();
+            }}
             variant="ghost"
             ml={"5px"}
           />
@@ -174,11 +186,11 @@ const MsgBoxHeader = ({
           aria-label="Info"
           onClick={toggleInfoPanel}
           variant="ghost"
-          fontSize={'20px'}
-          color={'#2d5be4'}
+          fontSize={"20px"}
+          color={"#2d5be4"}
           _hover={{
-            bg: 'none',
-            transform: 'scale(1.05)'
+            bg: "none",
+            transform: "scale(1.05)",
           }}
         />
       </HStack>

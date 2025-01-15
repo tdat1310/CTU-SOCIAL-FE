@@ -387,7 +387,7 @@ const GroupDetail = () => {
                             src={
                               userDetail.avtPic
                                 ? userDetail.avtPic.display_url
-                                : "/src/assets/no-avatar.png"
+                                : "no-avatar.png"
                             }
                           />
                           <Input

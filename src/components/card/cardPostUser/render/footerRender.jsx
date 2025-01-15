@@ -264,7 +264,9 @@ const FooterRender = ({
               <Flex
                 flexDirection={"column"}
                 gap={"10px"}
-                h={'400px'} maxH={'400px'} overflow={'auto'}
+                h={"400px"}
+                maxH={"400px"}
+                overflow={"auto"}
               >
                 {userLikeList.map((user) => (
                   <Flex key={user._id} gap={"10px"}>
@@ -273,7 +275,7 @@ const FooterRender = ({
                       src={
                         user.avtPic
                           ? user.avtPic.display_url
-                          : "/src/assets/no-avt.png"
+                          : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
                       }
                     />
                     <Text mt={"5px"}>{user.userName}</Text>

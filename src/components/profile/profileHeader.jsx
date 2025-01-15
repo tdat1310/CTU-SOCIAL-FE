@@ -62,10 +62,10 @@ const ProfileHeader = ({ data, setReload }) => {
             src={
               userData.coverPic
                 ? userData.coverPic.display_url
-                : "/src/assets/no-cover.png"
+                : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-cover.png?raw=true"
             }
             alt="Cover Image"
-            objectFit={'cover'}
+            objectFit={"cover"}
             w="full"
             h="100%"
           />
@@ -98,7 +98,7 @@ const ProfileHeader = ({ data, setReload }) => {
                   src={
                     userData.avtPic
                       ? userData.avtPic.display_url
-                      : "/src/assets/no-avt.png"
+                      : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
                   }
                   alt="Profile Image"
                   w="full"
@@ -187,7 +187,6 @@ const ProfileHeader = ({ data, setReload }) => {
               color="white"
               borderRadius="md"
               shadow="lg"
-             
               bgColor={"#2d5be4"}
               _hover={{
                 bg: "#234ca1",

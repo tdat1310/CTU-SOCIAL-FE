@@ -15,7 +15,7 @@ const joinedGroups = []; // Thay đổi thành mảng rỗng để kiểm tra
 const LeftContent = () => {
   const data = useSelector((state) => state.auth.userDetail);
   const groups = useSelector((state) => state.group.groups);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <Box h="75vh" position="sticky" top="15%" textAlign="left">
       <Box
@@ -50,7 +50,7 @@ const LeftContent = () => {
           </List>
         ) : (
           <Image
-            src="/src/assets/no-data.png"
+            src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-data.png?raw=true.png"
             alt="No data"
             objectFit={"contain"}
             w="100%"
@@ -66,8 +66,8 @@ const LeftContent = () => {
           }}
           bgColor={"#2d5be4"}
           color={"white"}
-          onClick={()=>{
-            navigate('/account/save')
+          onClick={() => {
+            navigate("/account/save");
           }}
         >
           Xem chi tiết
@@ -107,7 +107,7 @@ const LeftContent = () => {
           </List>
         ) : (
           <Image
-            src="/src/assets/no-data.png"
+            src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-data.png?raw=true.png"
             alt="No data"
             h={"170px"}
             objectFit={"contain"}
@@ -123,8 +123,8 @@ const LeftContent = () => {
           }}
           bgColor={"#2d5be4"}
           color={"white"}
-          onClick={()=>{
-            navigate('/group')
+          onClick={() => {
+            navigate("/group");
           }}
         >
           Xem chi tiết

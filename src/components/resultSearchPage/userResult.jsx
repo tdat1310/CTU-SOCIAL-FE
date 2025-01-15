@@ -14,7 +14,7 @@ const UserResult = ({ user, userId, navigate }) => (
     bg={useColorModeValue("white", "gray.800")}
     borderWidth="1px"
     borderRadius="lg"
-     border="1px solid #b8eafc"
+    border="1px solid #b8eafc"
     cursor="pointer"
     boxShadow="sm" // Bóng đổ nhẹ
     w="100%"
@@ -45,7 +45,11 @@ const UserResult = ({ user, userId, navigate }) => (
     <HStack spacing={4} position="relative" zIndex={1}>
       <Avatar
         name={user.userName}
-        src={user.avtPic ? user.avtPic.display_url : "/src/assets/no-avt.png"}
+        src={
+          user.avtPic
+            ? user.avtPic.display_url
+            : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
+        }
         size="lg"
         border="3px solid" // Viền cho Avatar
         borderColor="blue.600" // Viền màu xanh đậm

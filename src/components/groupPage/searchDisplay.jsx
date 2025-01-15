@@ -45,7 +45,7 @@ const SearchDisplay = ({
           Hãy nhập từ khóa để bắt đầu tìm kiếm nội dung.
         </Text>
         <Image
-          src="/src/assets/search.png"
+          src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/search.png?raw=true"
           alt="Hình ảnh mặc định"
           w={"50%"}
           borderRadius="lg"

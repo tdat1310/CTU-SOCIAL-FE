@@ -52,9 +52,7 @@ const Content = ({
               ))}
             </HStack>
           ) : (
-            <Text fontSize={"19px"} fontWeight={"500"} h={'15px'}>
-            
-            </Text>
+            <Text fontSize={"19px"} fontWeight={"500"} h={"15px"}></Text>
           )}
           <Text
             fontSize="2xl"
@@ -91,12 +89,12 @@ const Content = ({
               overflow="hidden"
               textOverflow="ellipsis"
               fontWeight={postDetail.fromGroup ? "400" : "500"}
-              cursor={'pointer'}
-              onClick={()=>{
-                if(userDetail._id === userInteract._id){
-                  navigate('/account/user')
-                }else{
-                  navigate(`/account/guest/${userDetail._id}`)
+              cursor={"pointer"}
+              onClick={() => {
+                if (userDetail._id === userInteract._id) {
+                  navigate("/account/user");
+                } else {
+                  navigate(`/account/guest/${userDetail._id}`);
                 }
               }}
             >
@@ -107,7 +105,7 @@ const Content = ({
             {postDetail.fromGroup && (
               <Avatar
                 // name="Segun Adebayo"
-                // src="/src/assets/no-avt.png"
+                // src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
                 borderRadius={"10px"}
               />
             )}
@@ -121,7 +119,7 @@ const Content = ({
               src={
                 postDetail.TaiKhoan_id.avtPic
                   ? postDetail.TaiKhoan_id.avtPic.display_url
-                  : "/src/assets/no-avt.png"
+                  : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-avt.png?raw=true"
               }
             />
           </AvatarGroup>

@@ -43,7 +43,7 @@ ChartJS.register(
 
 const ChartCustom = () => {
   const [currentWeek, setCurrentWeek] = useState(0);
-  const [selectedDate, setSelectedDate] = useState(''); // Default to today
+  const [selectedDate, setSelectedDate] = useState(""); // Default to today
   const posts = useSelector((state) => state.global.postChart);
   const [today, setToday] = useState(new Date());
   const [viewMode, setViewMode] = useState("week");
@@ -168,7 +168,7 @@ const ChartCustom = () => {
     onClick: (e, elements) => {
       if (elements.length > 0) {
         const clickedIndex = elements[0].index;
-       // console.log(clickedIndex);
+        // console.log(clickedIndex);
         setSelectedDate(
           viewMode === "week"
             ? weekDays[clickedIndex]
@@ -195,7 +195,7 @@ const ChartCustom = () => {
             {viewMode === "week" ? "Tuần bắt đầu từ: " : "Tháng hiện tại: "}
             {viewMode === "week" ? (
               <Text as="span" color="#2d5be4">
-                {formatDate(currentMonday, 'week')}{" "}
+                {formatDate(currentMonday, "week")}{" "}
               </Text>
             ) : (
               <Text as="span" color="#2d5be4">
@@ -270,7 +270,7 @@ const ChartCustom = () => {
               <Button
                 onClick={() => {
                   changeTime(-1);
-                 // setSelectedDate(new Date()); // Reset selected date when changing time
+                  // setSelectedDate(new Date()); // Reset selected date when changing time
                 }}
               >
                 {viewMode === "week" ? "Tuần Trước" : "Năm Trước"}
@@ -278,7 +278,7 @@ const ChartCustom = () => {
               <Button
                 onClick={() => {
                   changeTime(1);
-              //   setSelectedDate(new Date()); // Reset selected date when changing time
+                  //   setSelectedDate(new Date()); // Reset selected date when changing time
                 }}
               >
                 {viewMode === "week" ? "Tuần Sau" : "Năm Sau"}
@@ -299,7 +299,10 @@ const ChartCustom = () => {
               />
             ) : (
               <Flex w={"100%"} justifyContent={"center"}>
-                <Image h={"350px"} src="/src/assets/no-data-chart.png" />
+                <Image
+                  h={"350px"}
+                  src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainhttps://github.com/tdat1310/CTU-SOCIAL-FE/blob/mainno-data.png?raw=true-chart.png?raw=true"
+                />
               </Flex>
             )}
           </Box>
