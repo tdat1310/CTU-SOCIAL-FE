@@ -52,7 +52,7 @@ const FileDisplay = ({ files, dispatch, navigate, userDetail, isMember }) => {
           <Flex w={"100%"} justifyContent={"center"}>
             <Image
               w={"40%"}
-              src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-file.png?raw=true.png"
+              src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-file.png?raw=true.png"
               h={"350px"}
             />
           </Flex>

@@ -301,7 +301,7 @@ const ChartCustom = () => {
               <Flex w={"100%"} justifyContent={"center"}>
                 <Image
                   h={"350px"}
-                  src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-data.png?raw=true-chart.png?raw=true"
+                  src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-data.png?raw=true-chart.png?raw=true"
                 />
               </Flex>
             )}

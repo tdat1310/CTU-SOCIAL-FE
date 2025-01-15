@@ -35,7 +35,7 @@ const GroupResult = ({ group, navigate }) => {
           src={
             group.coverPic
               ? group.coverPic.display_url
-              : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-cover.png?raw=true"
+              : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-cover.png?raw=true"
           }
           borderRadius={"10px"}
           size="xl"

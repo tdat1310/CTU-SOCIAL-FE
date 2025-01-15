@@ -105,7 +105,7 @@ const Content = ({
             {postDetail.fromGroup && (
               <Avatar
                 // name="Segun Adebayo"
-                // src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
+                // src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-avt.png?raw=true"
                 borderRadius={"10px"}
               />
             )}
@@ -119,7 +119,7 @@ const Content = ({
               src={
                 postDetail.TaiKhoan_id.avtPic
                   ? postDetail.TaiKhoan_id.avtPic.display_url
-                  : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
+                  : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-avt.png?raw=true"
               }
             />
           </AvatarGroup>

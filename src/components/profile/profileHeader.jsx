@@ -62,7 +62,7 @@ const ProfileHeader = ({ data, setReload }) => {
             src={
               userData.coverPic
                 ? userData.coverPic.display_url
-                : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-cover.png?raw=true"
+                : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-cover.png?raw=true"
             }
             alt="Cover Image"
             objectFit={"cover"}
@@ -98,7 +98,7 @@ const ProfileHeader = ({ data, setReload }) => {
                   src={
                     userData.avtPic
                       ? userData.avtPic.display_url
-                      : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
+                      : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-avt.png?raw=true"
                   }
                   alt="Profile Image"
                   w="full"

@@ -275,7 +275,7 @@ const FooterRender = ({
                       src={
                         user.avtPic
                           ? user.avtPic.display_url
-                          : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
+                          : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-avt.png?raw=true"
                       }
                     />
                     <Text mt={"5px"}>{user.userName}</Text>

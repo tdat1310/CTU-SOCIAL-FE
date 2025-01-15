@@ -107,7 +107,7 @@ const MemberListModal = ({
                       src={
                         member.avtPic
                           ? member.avtPic.display_url
-                          : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
+                          : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-avt.png?raw=true"
                       }
                     />
                     <Text ml={4}>{member.userName}</Text>

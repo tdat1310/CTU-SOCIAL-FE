@@ -33,7 +33,7 @@ const Auth = () => {
         <Stack w="60%" h="100%" position="relative" bg={"#2d5be4"}>
           <Img
             src={
-              "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/auth-pic.png?raw=true"
+              "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/auth-pic.png?raw=true"
             }
             h="100%"
             objectFit={"contain"}

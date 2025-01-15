@@ -50,7 +50,7 @@ const LeftContent = () => {
           </List>
         ) : (
           <Image
-            src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-data.png?raw=true.png"
+            src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-data.png?raw=true.png"
             alt="No data"
             objectFit={"contain"}
             w="100%"
@@ -107,7 +107,7 @@ const LeftContent = () => {
           </List>
         ) : (
           <Image
-            src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-data.png?raw=true.png"
+            src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-data.png?raw=true.png"
             alt="No data"
             h={"170px"}
             objectFit={"contain"}

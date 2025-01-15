@@ -32,7 +32,7 @@ const Hero = ({ loadingHandle }) => {
           alt={"Login Image"}
           objectFit={"cover"}
           src={
-            "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/home-pic.png?raw=true"
+            "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/home-pic.png?raw=true"
           }
           onLoad={loadingHandle}
         />

@@ -116,7 +116,7 @@ const SavePage = () => {
                     <Image
                       objectFit={"contain"}
                       h={"400px"}
-                      src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-save.png?raw=true.png"
+                      src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-save.png?raw=true.png"
                     />
                   </Flex>
                 )
@@ -174,7 +174,7 @@ const SavePage = () => {
                   <Image
                     objectFit={"contain"}
                     h={"400px"}
-                    src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-save.png?raw=true.png"
+                    src="https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-save.png?raw=true.png"
                   />
                 </Flex>
               )}

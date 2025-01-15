@@ -118,7 +118,7 @@ const HeaderRender = ({
                 src={
                   blogData?.fromGroup?.coverPic
                     ? blogData.fromGroup.coverPic.display_url
-                    : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
+                    : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-avt.png?raw=true"
                 }
                 borderRadius={"10px"}
               />
@@ -133,7 +133,7 @@ const HeaderRender = ({
               src={
                 userDetail.avtPic
                   ? userDetail.avtPic.display_url
-                  : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/no-avt.png?raw=true"
+                  : "https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/no-avt.png?raw=true"
               }
               border="3px solid #2d5be4"
             />
