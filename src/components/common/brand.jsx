@@ -7,7 +7,7 @@ const Brand = () => {
       <Stack direction={["column", "row"]}>
         <Img
          w={'200px'}
-          src={"/src/assets/logo.png"}
+          src={"https://github.com/tdat1310/CTU-SOCIAL-FE/blob/main/src/assets/logo-ctu.png"}
         ></Img>
         {/* <Text fontSize="24px" fontWeight="900" mt="10px" color={'white'}>
           CTU Social
